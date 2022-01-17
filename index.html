@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <title>Video player</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h3 class="heading">Video player</h3>
+
+    <div class="container">
+      <div class="main-video">
+        <canvas id="video-player"> </canvas>
+        <div class="video-utils">
+          <h1 id="video-title">Video 1</h1>
+          <div>
+            <button id="screenshot">Screenshot</button>
+            <button id="autoplay" type="button">Autoplay : Off</button>
+            <button id="remove">Remove Video</button>
+          </div>
+        </div>
+      </div>
+      <ul id="playlist">
+        <li>
+          <a href="#"><img src="media/video1.png" /></a>
+          <h3>Video 1</h3>
+        </li>
+        <li>
+          <a href="#"><img src="media/video2.png" /></a>
+          <h3>Video 2</h3>
+        </li>
+        <li>
+          <a href="#"><img src="media/video3.png" /></a>
+          <h3>Video 3</h3>
+        </li>
+        <li>
+          <a href="#"><img src="media/video4.png" /></a>
+          <h3>Video 4</h3>
+        </li>
+        <li>
+          <a href="#"><img src="media/video5.png" /></a>
+          <h3>Video 5</h3>
+        </li>
+      </ul>
+      <div class="screenshot-container">
+        <h3>Screenshot</h3>
+        <canvas
+          id="canvasScreenshot"
+          width="300"
+          height="200"
+          style="border: 3px solid black"
+        ></canvas>
+      </div>
+    </div>
+    <div class="flex-container">
+      <div class="effect-container">
+        <h3>Effects</h3>
+        <div class="effect-buttons">
+          <button id="normalButton">Normal</button>
+          <button id="blackAndWhiteButton">Black and White</button>
+          <button id="sephiaButton">Sephia</button>
+          <button id="thresholdButton">Threshold</button>
+          <button id="invertButton">Invert Colors</button>
+        </div>
+      </div>
+      <div id="dropzone">Drop Video Here</div>
+    </div>
+  </body>
+</html>
